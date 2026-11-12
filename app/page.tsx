@@ -261,7 +261,6 @@ export default function Home() {
         center: CITY_NAME,
         zones: selectedZones.join(", "),
       });
-      window.open(CALENDAR_URL, "_blank", "noopener,noreferrer");
       setStep("thanks");
     } finally {
       setIsSubmitting(false);
