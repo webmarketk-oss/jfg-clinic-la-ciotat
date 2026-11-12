@@ -1,5 +1,5 @@
 "use client";
-/* JFG CLINIC LA CIOTAT LASER — jusqu'à -40% forfaits + bilan/test + sans engagement — PAS MARSEILLE 6 */
+/* JFG CLINIC LA CIOTAT LASER — jusqu'à -40% + RDV Google Agenda — PAS MARSEILLE 6 */
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 
@@ -469,16 +469,28 @@ export default function Home() {
             <p className="step-label">Demande reçue</p>
             <h2 id="thanks-title">Toute notre équipe vous remercie !</h2>
             <div className="thanks-urgency" role="status">
-              <strong>Places limitées cette semaine</strong>
+              <strong>Derniers créneaux cette semaine</strong>
               <p>
-                Jusqu&apos;à -40 % sur nos forfaits, bilan et séance test
-                offerts, sans engagement. Notre équipe vous rappelle très
-                vite pour bloquer votre créneau.
+                Bloquez maintenant jusqu&apos;à -40 % sur nos forfaits, avec
+                bilan et séance test offerts, sans engagement. Les places
+                partent vite à La Ciotat.
               </p>
             </div>
+            <a
+              className="booking-action"
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3Qa2Tily5Ry0jWOHXhp6SRZ-Y9Y0lLcEBB390ltdHFnmfH2V2oki-bEzdMO2cnD6iakiLg8nlS"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Je réserve mon créneau maintenant
+            </a>
+            <p className="thanks-booking-note">
+              Réservation en ligne, 30 secondes · sans engagement
+            </p>
             <p>
               Nous avons bien reçu votre demande pour JFG Clinic La Ciotat.
-              Aucun engagement : le bilan et la séance test restent offerts.
+              Réservez votre créneau tout de suite, ou notre équipe vous
+              rappelle très rapidement.
             </p>
           </section>
         )}
@@ -533,3 +545,4 @@ export default function Home() {
     </>
   );
 }
+
